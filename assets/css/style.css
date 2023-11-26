@@ -792,7 +792,7 @@ tr:nth-child(even){
 
 .servicios-tabla{
   font-size: 2em;
-  margin: auto;
+  margin-top: 2em;
   width: 100%;
   text-align: center;
   table-layout: auto;
@@ -807,10 +807,7 @@ tr:nth-child(even){
 .servicios-tabla > caption:nth-child(even){
   caption-side: bottom;
 
-
-  
 }
-
 
 
 .whatsapp, .whatsapp a:link, .whatsapp a:visited, .whatsapp a:active, .whatsapp a:visited{
