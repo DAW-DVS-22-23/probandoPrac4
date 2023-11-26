@@ -339,6 +339,9 @@ nav > a {
   justify-content: center;
   align-items: center;
   color: white;
+  box-shadow: 0 7px 12px 0px gray;
+  -webkit-box-shadow: 0 7px 12px 0px gray;
+  -moz-box-shadow: 0 7px 12px 0px gray;
  
 }
 
@@ -620,6 +623,9 @@ nav > a {
   justify-content: center;
   align-items: center;
   color: white;
+  box-shadow: 0 7px 12px 0px gray;
+  -webkit-box-shadow: 0 7px 12px 0px gray;
+  -moz-box-shadow: 0 7px 12px 0px gray;
 }
 
 nav >  a:link, nav >  a:visited, nav >  a:active{
