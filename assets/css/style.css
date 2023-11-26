@@ -1,0 +1,846 @@
+
+@font-face {
+  font-family: "Winner";
+  src: url(../webfonts/winner-comp-extra-bold.ttf) format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;;
+  font-family: 'Montserrat';
+  font-size: 1em;
+  height: 100%;
+  gap: 2em;
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  height: 5em;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+header > a  img {
+  height: 5em;
+}
+
+h1.h0 {
+  font-family: Winner;
+  font-size: 2.5em;
+  justify-self: center;
+  margin: 0.15em auto;
+}
+
+nav {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 7em 0 2em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav > a {
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 10em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ 
+}
+
+nav >  a:link, nav >  a:visited, nav >  a:active{
+  color: white;
+}
+nav > a:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: white;
+}
+
+section.index-section{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 1em;
+}
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  line-height: 1.75;
+  text-align: justify;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+article > h2 {
+  align-self: flex-start;
+}
+
+article.contacto-datos  a:link, article.contacto-datos  a:visited, article.contacto-datos  a:hover, article.contacto-datos  a:active{
+  color: black;
+}
+
+aside{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  overflow: auto;
+}
+
+aside > a, aside > a:visited, aside > a:link, aside > a:active {
+  color: black;
+}
+
+aside > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+footer{
+  margin-top: 2em;
+  display: flex;
+  color: white;
+  background-color: black;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+footer > a{
+  margin-bottom: 1em;
+}
+footer > a, footer > a:link, footer > a:visited, footer > a:active{
+  color: white;
+}
+
+footer > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+form{
+  display: table;
+}
+
+h2 {
+  text-align: center;
+}
+.titulo-contacto {
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.linea {
+  display: table-row;
+  height: 2em;
+}
+
+.textos {
+  display: table-cell;
+  text-align: right;
+  width: 40%;
+  padding-right: 1em;
+}
+
+#consulta{
+  vertical-align: top;
+}
+
+.controles {
+  display: table-cell;
+  text-align: left;
+  width: 50%;
+}
+
+.controles#cookies-check{
+  text-align: right;
+}
+
+.textos#cookies-text{
+  text-align: left;
+}
+
+.contacto-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contacto-formulario{
+  width: 30%;
+}
+
+.contacto-formulario input{
+  padding: 0.25em 0;
+  background-color: rgb(236, 255, 255);
+}
+
+.contacto-formulario input:focus{
+  background-color: white;
+}
+.contacto-formulario textarea{
+  background-color: rgb(236, 255, 255);
+  resize: none;
+}
+
+.contacto-formulario textarea:focus{
+  background-color: white;
+}
+
+.contacto-section  h3 {
+  text-align: center;
+}
+
+.contacto-datos{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-datos  a, .contacto-datos  a:visited, .contacto-datos  a:link, .contacto-datos  a:hover, .contacto-datos  a:active {
+  color: black;
+}
+
+.contacto-datos  a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.clear{
+  clear: both;
+}
+.boton-formulario{
+  display: block;
+  text-align: center;
+}
+
+.estilo-boton{
+  padding: 0.5em 2em;
+  border-radius: 0.4em;
+}
+
+.tabla {
+  display: table;
+}
+
+tr:nth-child(even){
+  background-color: #B4CCC5 ;
+}
+
+.servicios-tabla{
+  font-size: 2em;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  table-layout: auto;
+  border-collapse: collapse;
+  border: 1px solid #B4CCC5;
+}
+
+.servicios-tabla  tr:first-child{
+  background-color: rgb(255, 230, 215);
+}
+
+.servicios-section caption:nth-child(even){
+  caption-side: bottom;
+}
+
+.whatsapp, .whatsapp a:link, .whatsapp a:visited, .whatsapp a:active, .whatsapp a:visited{
+  z-index: 1;
+  position: fixed;
+  bottom: 0.2em;
+  right: 0.2em;
+  font-size: 2em;
+  color: green;
+}
+
+
+@media (max-width: 1200px){
+
+body{
+  display: flex;
+  flex-direction: column;;
+  font-family: 'Montserrat';
+  font-size: 1em;
+  height: 100%;
+  gap: 2em;
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  height: 5em;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+header > a  img {
+  height: 5em;
+}
+
+h1.h0 {
+  font-family: Winner;
+  font-size: 2.5em;
+  justify-self: center;
+  margin: 0.15em auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 7em 0 2em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav > a {
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 10em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ 
+}
+
+nav >  a:link, nav >  a:visited, nav >  a:active{
+  color: white;
+}
+nav > a:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: white;
+}
+
+section.index-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 1em;
+  justify-content: space-around;
+}
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  line-height: 1.75;
+  text-align: justify;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+article > h2 {
+  align-self: flex-start;
+}
+
+article.contacto-datos  a:link, article.contacto-datos  a:visited, article.contacto-datos  a:hover, article.contacto-datos  a:active{
+  color: black;
+}
+
+
+aside{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  overflow: auto;
+  order: 2;
+}
+
+aside > a, aside > a:visited, aside > a:link, aside > a:active {
+  color: black;
+}
+
+aside > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+footer{
+  margin-top: 2em;
+  display: flex;
+  color: white;
+  background-color: black;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+footer > a{
+  margin-bottom: 1em;
+}
+footer > a, footer > a:link, footer > a:visited, footer > a:active{
+  color: white;
+}
+
+footer > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+form{
+  display: table;
+}
+
+h2 {
+  text-align: center;
+}
+.titulo-contacto {
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.linea {
+  display: table-row;
+  height: 2em;
+}
+
+.textos {
+  display: table-cell;
+  text-align: right;
+  width: 40%;
+  padding-right: 1em;
+}
+
+#consulta{
+  vertical-align: top;
+}
+
+.controles {
+  display: table-cell;
+  text-align: left;
+  width: 50%;
+}
+
+.controles#cookies-check{
+  text-align: right;
+}
+
+.textos#cookies-text{
+  text-align: left;
+}
+
+.contacto-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contacto-formulario{
+  width: 30%;
+}
+
+.contacto-formulario input{
+  padding: 0.25em 0;
+  background-color: rgb(236, 255, 255);
+}
+
+.contacto-formulario input:focus{
+  background-color: white;
+}
+.contacto-formulario textarea{
+  background-color: rgb(236, 255, 255);
+  resize: none;
+}
+
+.contacto-formulario textarea:focus{
+  background-color: white;
+}
+
+.contacto-section  h3 {
+  text-align: center;
+}
+
+.contacto-datos{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-datos  a, .contacto-datos  a:visited, .contacto-datos  a:link, .contacto-datos  a:hover, .contacto-datos  a:active {
+  color: black;
+}
+
+.contacto-datos  a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.clear{
+  clear: both;
+}
+.boton-formulario{
+  display: block;
+  text-align: center;
+}
+
+.estilo-boton{
+  padding: 0.5em 2em;
+  border-radius: 0.4em;
+}
+
+.input{
+  width: 10em;
+}
+.tabla {
+  display: table;
+}
+
+textarea{
+  width: 10em;
+}
+
+tr:nth-child(even){
+  background-color: #B4CCC5 ;
+}
+
+.servicios-tabla{
+  font-size: 2em;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  table-layout: auto;
+  border-collapse: collapse;
+  border: 1px solid #B4CCC5;
+}
+
+.servicios-tabla  tr:first-child{
+  background-color: rgb(255, 230, 215);
+}
+
+.servicios-tabla > caption:nth-child(even){
+  caption-side: bottom;
+}
+
+
+.whatsapp, .whatsapp a:link, .whatsapp a:visited, .whatsapp a:active, .whatsapp a:visited{
+  z-index: 1;
+  position: fixed;
+  bottom: 0.2em;
+  right: 0.2em;
+  font-size: 2em;
+  color: green;
+}
+
+}
+
+
+@media (max-width: 600px){
+  body{
+  display: flex;
+  flex-direction: column;;
+  font-family: 'Montserrat';
+  font-size: 1em;
+  height: 100%;
+  gap: 2em;
+}
+header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  height: 5.5em;
+}
+
+
+h1.h0 {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  margin-top: 10em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 1em 0;
+}
+
+nav > a {
+  padding: 0.5em 0;
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 10em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav >  a:link, nav >  a:visited, nav >  a:active{
+  color: white;
+}
+nav > a:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: white;
+}
+
+section.index-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 1em;
+  justify-content: space-around;
+}
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  line-height: 1.75;
+  text-align: justify;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+article > h2 {
+  align-self: flex-start;
+}
+
+article.contacto-datos  a:link, article.contacto-datos  a:visited, article.contacto-datos  a:hover, article.contacto-datos  a:active{
+  color: black;
+}
+
+article.contacto-datos{
+  width: 100%;
+}
+
+
+aside{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  overflow: auto;
+}
+
+aside > a, aside > a:visited, aside > a:link, aside > a:active {
+  color: black;
+}
+
+aside > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+footer{
+  margin-top: 2em;
+  display: flex;
+  color: white;
+  background-color: black;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+footer > a{
+  margin-bottom: 1em;
+}
+footer > a, footer > a:link, footer > a:visited, footer > a:active{
+  color: white;
+}
+
+footer > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+form{
+  display: table;
+}
+
+h2 {
+  text-align: center;
+}
+.titulo-contacto {
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.contactanos{
+  margin-top: 2em;
+}
+
+
+
+.controles#cookies-check{
+  text-align: right;
+}
+
+.textos#cookies-text{
+  text-align: left;
+}
+
+.contacto-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.contacto-formulario{
+  width: 100%;
+}
+
+.contacto-formulario input{
+  padding: 0.25em 0;
+  background-color: rgb(236, 255, 255);
+}
+
+.contacto-formulario input:focus{
+  background-color: white;
+}
+.contacto-formulario textarea{
+  background-color: rgb(236, 255, 255);
+  resize: none;
+}
+
+.contacto-formulario textarea:focus{
+  background-color: white;
+}
+
+
+.contacto-datos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-datos  a, .contacto-datos  a:visited, .contacto-datos  a:link, .contacto-datos  a:hover, .contacto-datos  a:active {
+  color: black;
+}
+
+.contacto-datos  a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.clear{
+  clear: both;
+}
+.boton-formulario{
+  display: block;
+  text-align: center;
+}
+
+.estilo-boton{
+  padding: 0.5em 2em;
+  border-radius: 0.4em;
+}
+
+.tabla {
+  display: table;
+}
+
+tr:nth-child(even){
+  background-color: #B4CCC5 ;
+}
+
+.servicios-tabla{
+  font-size: 2em;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  table-layout: auto;
+  border-collapse: collapse;
+  border: 1px solid #B4CCC5;
+}
+
+.servicios-tabla  tr:first-child{
+  background-color: rgb(255, 230, 215);
+}
+
+.servicios-tabla > caption:nth-child(even){
+  caption-side: bottom;
+
+
+  
+}
+
+
+
+.whatsapp, .whatsapp a:link, .whatsapp a:visited, .whatsapp a:active, .whatsapp a:visited{
+  z-index: 1;
+  position: fixed;
+  font-size: 2em;
+  color: green;
+  bottom: -0.5em;
+  left: 0.3em;
+}
+}
+
+
+
+footer .social-media{
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+footer > h4{
+  text-align: center;
+}
+
+.social-media i{
+  font-size: 1.5em;
+}
+.social-media a:link, .social-media a:visited, .social-media a:hover, .social-media a:active{
+  color: white;
+}
+
+
+
