@@ -56,7 +56,6 @@ a {
 }
 
 nav > a {
-  z-index: 1;
   font-size: 1em;
   box-sizing: border-box;
   width: 10em;
