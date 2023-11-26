@@ -47,6 +47,8 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 7em 0 2em 0;
+  
+  
 }
 
 a {
@@ -54,6 +56,7 @@ a {
 }
 
 nav > a {
+  z-index: 1;
   font-size: 1em;
   box-sizing: border-box;
   width: 10em;
@@ -62,7 +65,10 @@ nav > a {
   justify-content: center;
   align-items: center;
   color: white;
- 
+  box-shadow: 0 7px 12px 0px gray;
+  -webkit-box-shadow: 0 7px 12px 0px gray;
+  -moz-box-shadow: 0 7px 12px 0px gray;
+
 }
 
 nav >  a:link, nav >  a:visited, nav >  a:active{
