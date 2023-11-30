@@ -4,6 +4,80 @@
   src: url(../webfonts/winner-comp-extra-bold.ttf) format("truetype");
 }
 
+/*EJERCICIO 7.1 RECUADRO ROJO IMG SIN ALT*/
+img:not([alt]){  /*ETIQUETA PARA REMARCAR LAS IMG SIN ALTA*/
+  border: 4px solid red; /*AL ESTAR AQUIS SITUADO SE PUEDE COMPROBAR QUE*/
+}                         /*AFECTA A TODOOS LOS TAMAÑOS DE PANTALLA*/
+
+/*EJERCICIO 8.1*/
+/*ETIQUETAS DE TRANSICION EN LA PAGINA CONTACTO SOBRE TLF Y DIRECCION*/
+article.contacto-datos  a:link, article.contacto-datos  a:visited, article.contacto-datos  a:hover, article.contacto-datos  a:active{
+  color: black;
+  transition: font-size 0.3s linear;
+  -webkit-transition: font-size 0.3s linear;
+  -moz-transition: font-size 0.3s linear;
+}
+
+article.contacto-datos > h4:hover{
+  font-size: 1.2em;
+}
+
+/*EJERCICIO 7.1 PDF*/
+/*ETIQUETA PARA AÑADIR EL ICONO DEL PDF AL FINAL DE CADA ENLACE QUE LLEVE A UN PDF*/
+a[href$=".pdf"]::after{
+  content: '\f1c1';
+  display: inline-block;
+  margin-left: 5px;
+  font-family: "FontAwesome";
+}
+
+/*EJERCICIO 5.1 & 8.1*/
+/*ETIQUETAS DE TRANSICION Y SOMBRA PARA EL HEADER*/
+nav  a {
+  font-size: 1em;
+  box-sizing: border-box;
+  width: 10em;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 7px 12px 0px gray;
+  -webkit-box-shadow: 0 7px 12px 0px gray;
+  -moz-box-shadow: 0 7px 12px 0px gray;
+  transition: font-size 0.3s linear;
+  -webkit-transition: font-size 0.3s linear;
+  -moz-box-stransition: font-size 0.3s linear;
+
+}
+
+
+nav a:hover{
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: white;
+}
+
+/*EJERCICIO 9.1*/
+/*ETIQUETAS DE TRANSFORMACION PARA LOS LINKS DE LA PAGINA INICIAL*/
+aside > a, aside > a:visited, aside > a:link, aside > a:active {
+  color: black;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  
+}
+
+aside > a:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -55,27 +129,9 @@ a {
   text-decoration: none;
 }
 
-nav > a {
-  font-size: 1em;
-  box-sizing: border-box;
-  width: 10em;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  box-shadow: 0 7px 12px 0px gray;
-  -webkit-box-shadow: 0 7px 12px 0px gray;
-  -moz-box-shadow: 0 7px 12px 0px gray;
 
-}
 
 nav >  a:link, nav >  a:visited, nav >  a:active{
-  color: white;
-}
-nav > a:hover{
-  text-decoration: underline;
-  text-decoration-color: red;
   color: white;
 }
 
@@ -101,9 +157,7 @@ article > h2 {
   align-self: flex-start;
 }
 
-article.contacto-datos  a:link, article.contacto-datos  a:visited, article.contacto-datos  a:hover, article.contacto-datos  a:active{
-  color: black;
-}
+
 
 aside{
   width: 30%;
@@ -115,14 +169,7 @@ aside{
   overflow: auto;
 }
 
-aside > a, aside > a:visited, aside > a:link, aside > a:active {
-  color: black;
-}
 
-aside > a:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-}
 
 footer{
   margin-top: 2em;
@@ -347,11 +394,7 @@ nav > a {
 nav >  a:link, nav >  a:visited, nav >  a:active{
   color: white;
 }
-nav > a:hover{
-  text-decoration: underline;
-  text-decoration-color: red;
-  color: white;
-}
+
 
 section.index-section{
   display: flex;
@@ -630,11 +673,7 @@ nav > a {
 nav >  a:link, nav >  a:visited, nav >  a:active{
   color: white;
 }
-nav > a:hover{
-  text-decoration: underline;
-  text-decoration-color: red;
-  color: white;
-}
+
 
 section.index-section{
   display: flex;
@@ -828,6 +867,7 @@ tr:nth-child(even){
   color: green;
   bottom: -0.5em;
   left: 0.3em;
+  width: fit-content;
 }
 }
 
